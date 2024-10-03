@@ -1,0 +1,225 @@
+.leagueName {
+	width: 100%;
+	padding: 0.2em 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.8rem;
+	margin-bottom: 1em;
+	background-color: #212121;
+	border-radius: 5em;
+	position: relative;
+	.leagueInfo {
+		display: flex;
+		flex-direction: row;
+		img {
+			width: 1.4em;
+			margin-right: 0.5em;
+		}
+	}
+	button {
+		padding: 0.2em 0.5em;
+		margin-left: 2em;
+		color: #000;
+		background-color: #deff31;
+		border: none;
+		border-radius: 5em;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1.3rem;
+		font-weight: 600;
+		cursor: pointer;
+		z-index: 5;
+		transition: transform 0.3s;
+	}
+	button:hover,
+	button:focus {
+		outline: none;
+		transform: scale(1.1);
+	}
+}
+
+.event {
+	width: 100%;
+	padding: 0.5em 2em;
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	color: #000;
+	.startTime {
+		margin-right: 2em;
+	}
+	.infoContainer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		.teams {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.homeTeam,
+			.awayTeam {
+				display: flex;
+				align-items: center;
+				img {
+					width: 1em;
+					margin-right: 0.5em;
+				}
+			}
+			.awayTeam {
+				padding-top: 0.5em;
+			}
+		}
+		.result {
+			font-size: 1.5rem;
+			margin-left: 1em;
+			text-align: center;
+		}
+		.result {
+			p {
+				padding-top: 0.3em;
+			}
+		}
+	}
+}
+
+.border {
+	border-bottom: 1px solid #212121;
+}
+.border:last-child {
+	border-bottom: 0;
+}
+
+.noMatches {
+	padding-left: 1em;
+	margin-bottom: 2em;
+	font-size: 1.5rem;
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	.leagueName {
+		font-size: 2rem;
+		button {
+			font-size: 1.3rem;
+		}
+	}
+	.event {
+		width: 90%;
+		font-size: 1.6rem;
+		.infoContainer {
+			.teams {
+				.homeTeam,
+				.awayTeam {
+					img {
+						width: 1.2em;
+					}
+				}
+			}
+			.result {
+				font-size: 1.6rem;
+			}
+		}
+	}
+	.noMatches {
+		font-size: 1.6rem;
+	}
+}
+@media (min-width: 1020px) {
+	.leagueName {
+		font-size: 2.2rem;
+		button {
+			font-size: 1.4rem;
+		}
+	}
+	.event {
+		font-size: 1.7rem;
+		.infoContainer {
+			.teams {
+				.homeTeam,
+				.awayTeam {
+					img {
+						width: 1.4em;
+					}
+				}
+			}
+			.result {
+				font-size: 1.7rem;
+			}
+		}
+	}
+	.noMatches {
+		font-size: 1.7rem;
+	}
+}
+@media (min-width: 1020px) and (orientation: landscape) {
+	.leagueName {
+		font-size: 2.4rem;
+		button {
+			font-size: 1.5rem;
+		}
+	}
+	.event {
+		width: 80%;
+		font-size: 1.8rem;
+		.infoContainer {
+			.teams {
+				.homeTeam,
+				.awayTeam {
+					img {
+						width: 1.5em;
+					}
+				}
+			}
+			.result {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	.noMatches {
+		font-size: 1.8rem;
+	}
+}
+@media (min-width: 1800px) and (orientation: landscape) {
+	.leagueName {
+		font-size: 2.5rem;
+		button {
+			font-size: 1.6rem;
+		}
+	}
+	.event {
+		width: 90%;
+	}
+}
+
+@media (min-width: 2500px) and (orientation: landscape) {
+	.leagueName {
+		font-size: 2.8rem;
+		button {
+			font-size: 1.8rem;
+		}
+	}
+	.event {
+		width: 85%;
+		font-size: 2rem;
+		.infoContainer {
+			.teams {
+				.homeTeam,
+				.awayTeam {
+					img {
+						width: 1.6em;
+					}
+				}
+			}
+			.result {
+				font-size: 2rem;
+			}
+		}
+	}
+	.noMatches {
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,83 @@
+.imageContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		opacity: 0;
+		object-fit: cover;
+		object-position: center;
+		transition: all 0.5s ease-in-out;
+	}
+	img.active {
+		left: 0;
+		opacity: 1;
+	}
+
+	img.inactive {
+		left: -100%;
+		opacity: 0;
+	}
+}
+
+.prevButton,
+.nextButton {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	padding: 0.3em 0.2em;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.prevButton {
+	left: 10px;
+}
+
+.nextButton {
+	right: 10px;
+}
+.nextButton,
+.prevButton {
+	svg {
+		width: 1.5em;
+		fill: #d4fd00;
+		transition: transform 0.3s;
+	}
+}
+.prevButton:hover,
+.prevButton:focus,
+.nextButton:hover,
+.nextButton:focus {
+	outline: none;
+	svg {
+		transform: scale(1.3);
+	}
+}
+
+@media (min-width: 768px) {
+	.imageContainer {
+		img {
+			border-radius: 5em;
+		}
+	}
+}
+@media (min-width: 1800px) and (orientation: landscape) {
+	.imageContainer {
+		position: relative;
+	}
+}
+@media (min-width: 2500px) and (orientation: landscape) {
+	.nextButton,
+	.prevButton {
+		svg {
+			width: 2em;
+		}
+	}
+}

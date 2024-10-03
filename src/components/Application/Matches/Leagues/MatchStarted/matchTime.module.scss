@@ -1,0 +1,16 @@
+.liveTime{
+    font-weight: 600;
+    color: red;
+}
+.timeAnimation{
+    animation: blink-animation 2s infinite;
+}
+
+@keyframes blink-animation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

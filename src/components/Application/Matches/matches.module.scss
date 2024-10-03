@@ -1,0 +1,28 @@
+.matches {
+	width: 98%;
+	margin-bottom: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.matches {
+		width: 80%;
+	}
+}
+@media (min-width: 1020px) {
+	.matches {
+		width: 70%;
+	}
+}
+@media (min-width: 1020px) and (orientation: landscape) {
+	.matches {
+		width: 60%;
+	}
+}
+@media (min-width: 1800px) and (orientation: landscape) {
+	.matches {
+		width: 50%;
+	}
+}

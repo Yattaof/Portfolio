@@ -1,0 +1,94 @@
+$col-secondary: #d4fd00;
+nav {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	.appBtn {
+		margin: 1em 3em 0 0;
+		font-family: 'Quicksand', sans-serif;
+		display: flex;
+		flex-direction: column;
+		.browserLink {
+			text-decoration: none;
+			p {
+				display: inline-block;
+				word-break: break-word;
+				font-size: 2rem;
+				font-weight: 700;
+				text-align: center;
+				text-transform: uppercase;
+				text-decoration: none;
+				line-height: 0.8;
+				color: lighten($col-secondary, 10%);
+				text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9),
+					0 1px 0 adjust-hue(darken($col-secondary, 22%), -3deg),
+					0 3px 0 adjust-hue(darken($col-secondary, 21%), -3deg),
+					0 5px 0 adjust-hue(darken($col-secondary, 20%), -3deg),
+					0 7px 0 adjust-hue(darken($col-secondary, 19%), -3deg),
+					0 9px 0 adjust-hue(darken($col-secondary, 18%), -3deg),
+					0 6px 50px transparentize(lighten($col-secondary, 20%), 0.2);
+				transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+				transition: all 0.5s;
+				cursor: pointer;
+			}
+			p::after {
+				content: 'Kibica';
+				display: block;
+			}
+			p:first-line {
+				font-size: 0.8em;
+			}
+			p:hover {
+				transform: perspective(8em) rotateX(11deg) scale(1.2);
+				text-shadow: 0 -1px 15px black,
+					0 1px 0 adjust-hue(darken($col-secondary, 22%), -3deg),
+					0 2px 0 adjust-hue(darken($col-secondary, 21%), -3deg),
+					0 0px 0 adjust-hue(darken($col-secondary, 20%), -3deg),
+					0 1px 0 adjust-hue(darken($col-secondary, 19%), -3deg),
+					0 2px 0 adjust-hue(darken($col-secondary, 18%), -3deg),
+					0 2px 30px transparentize(lighten($col-secondary, 20%), 0.4);
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	nav {
+		width: 30%;
+		.appBtn {
+			margin: 2em 7em 0 0;
+			.browserLink {
+				p {
+					font-size: 3rem;
+				}
+				p:first-line {
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1800px) and (orientation: landscape) {
+	nav {
+		.appBtn {
+			margin: 3em 15em 0 0;
+		}
+	}
+}
+@media (min-width: 2500px) and (orientation: landscape) {
+	nav {
+		.appBtn {
+			margin: 4em 20em 0 0;
+			.browserLink {
+				p {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
+}

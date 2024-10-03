@@ -1,0 +1,68 @@
+.calendar {
+	margin-bottom: 3em;
+	button {
+		margin: 0 0.2em;
+		padding: 0.3em 0.7em;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: white;
+		border: none;
+		background-color: royalblue;
+		border-radius: 1em 0.5em;
+		transition: transform 0.3s;
+		cursor: pointer;
+	}
+	button:hover,
+	button:focus {
+		outline: none;
+		transform: scale(1.1);
+	}
+	button:first-child{
+		margin-left: 0;
+	}
+	button:last-child{
+		margin-right: 0;
+	}
+	.active{
+		box-shadow: 0 0 5px black;
+		background-color: rgb(24, 82, 255);
+	}
+}
+
+@media (min-width: 768px) {
+	.calendar {
+		button {
+			padding: 0.4em 0.8em;
+			font-size: 1.6rem;
+		}
+	}
+}
+@media (min-width: 1020px) {
+  .calendar {
+		button {
+			font-size: 1.7rem;
+		}
+	}
+}
+@media (min-width: 1020px) and (orientation: landscape) {
+  .calendar {
+		button {
+			font-size: 1.8rem;
+		}
+	}
+}
+@media (min-width: 1800px) and (orientation: landscape) {
+  .calendar {
+		button {
+			font-size: 1.7rem;
+		}
+	}
+}
+@media (min-width: 2500px) and (orientation: landscape) {
+  .calendar {
+		button {
+			font-size: 2rem;
+		}
+	}
+}

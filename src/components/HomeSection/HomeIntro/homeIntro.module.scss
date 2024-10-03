@@ -1,0 +1,147 @@
+.homeIntro {
+	min-height: 80vh;
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 3em 3em;
+	overflow: hidden;
+	.descSection {
+		width: 100%;
+		padding: 0 4em;
+		color: #fff;
+		h1 {
+			text-align: center;
+			padding-bottom: 0.5em;
+			font-size: 6rem;
+			font-weight: 400;
+			letter-spacing: 0.2em;
+			color: #d4fd00;
+		}
+		p {
+			text-align: center;
+			font-size: 1.6rem;
+		}
+		p:last-child {
+			padding-top: 1em;
+			margin-bottom: 2em;
+		}
+	}
+	.heroImgSection {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 7em;
+		img {
+			padding: 0 2em;
+			width: 30em;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.homeIntro {
+		min-height: 75vh;
+		border-radius: 0 0 5em 5em;
+		.descSection {
+			padding: 0 5em;
+			h1 {
+				padding-bottom: 0.2em;
+				font-size: 8rem;
+			}
+			p {
+				font-size: 1.7rem;
+			}
+			p:last-child {
+				margin-bottom: 5em;
+			}
+		}
+		.heroImgSection {
+			margin-top: 5em;
+			img {
+				width: 55em;
+			}
+		}
+	}
+}
+@media (min-width: 910px) {
+	.homeIntro {
+		.descSection {
+			padding: 0 15em;
+			h1 {
+				font-size: 9rem;
+			}
+			p:last-child {
+				margin-bottom: 5em;
+			}
+		}
+		.heroImgSection {
+			margin-top: 5em;
+		}
+	}
+}
+@media (min-width: 1020px) and (orientation: landscape) {
+	.homeIntro {
+		flex-direction: row;
+		border-radius: 0 0 7em 7em;
+		.descSection {
+			width: 55%;
+			padding: 0 2em;
+			h1 {
+				font-size: 10rem;
+			}
+			p {
+				font-size: 1.6rem;
+			}
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.heroImgSection {
+			width: 35%;
+			display: block;
+			margin-top: 0;
+			img {
+				width: 50em;
+			}
+		}
+	}
+}
+@media (min-width: 1800px) and (orientation: landscape) {
+	.homeIntro {
+		min-height: 90vh;
+		.descSection {
+			width: 50%;
+			p {
+				text-align: left;
+				padding: 0 5em;
+			}
+		}
+		.heroImgSection {
+			img {
+				width: 60em;
+			}
+		}
+	}
+}
+@media (min-width: 2500px) and (orientation: landscape) {
+	.homeIntro {
+		.descSection {
+			width: 50%;
+			p {
+				font-size: 2rem;
+			}
+			h1 {
+				padding-bottom: 0.2em;
+				font-size: 14rem;
+			}
+		}
+		.heroImgSection {
+			img {
+				width: 75em;
+			}
+		}
+	}
+}

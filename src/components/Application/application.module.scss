@@ -1,0 +1,241 @@
+//Prawa autorskie należą do Marcel Mozler - smallpixel.pl
+.application {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #eaece5;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	.welcomeText {
+		min-height: 20vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #333;
+		box-shadow: 0 0 10px black;
+		border-radius: 0 0 2em 2em;
+		margin-bottom: 5em;
+		.headText {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-top: 5em;
+			button {
+				align-self: flex-start;
+				margin-bottom: 1em;
+				padding: 0.3em 0.6em;
+				font-family: 'Quicksand', sans-serif;
+				font-size: 1.2rem;
+				font-weight: 600;
+				background-color: royalblue;
+				border: none;
+				border-radius: 1em 0.3em;
+				color: #fff;
+				transition: transform 0.3s;
+				cursor: pointer;
+			}
+			button:hover,
+			button:focus {
+				outline: none;
+				transform: scale(1.1);
+				background-color: #1852ff;
+			}
+			h1 {
+				font-family: 'Montserrat', sans-serif;
+				text-transform: uppercase;
+				font-size: 3rem;
+				animation: pulse 3s ease-in-out infinite;
+			}
+		}
+		p {
+			width: 100%;
+			padding: 0.5em 3em 1em 3em;
+			font-size: 1.4rem;
+			text-align: center;
+			.liveSpan {
+				font-weight: bold;
+				color: red;
+			}
+		}
+		p:nth-child(3) {
+			padding: 0.5em 3em 0.5em 3em;
+		}
+		.addon {
+			font-style: italic;
+			color: #a4a4a4;
+			font-size: 1.2rem;
+		}
+		p:last-child {
+			padding: 0em 3em 4em 3em;
+		}
+	}
+	.contactText {
+		min-height: 10vh;
+		width: 100%;
+		margin-top: 5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #333;
+		box-shadow: 0 0 10px black;
+		p {
+			width: 100%;
+			padding: 1em 2em 0.5em 2em;
+			font-size: 1.4rem;
+			text-align: center;
+		}
+		.emailAdress {
+			padding: 0em 2em 1em 2em;
+			font-style: italic;
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media (min-width: 768px) {
+	.application {
+		.welcomeText {
+			.headText {
+				padding-top: 5em;
+				button {
+					font-size: 1.3rem;
+				}
+			}
+			p {
+				width: 80%;
+				padding: 1em 2em 1em 2em;
+				font-size: 1.5rem;
+			}
+			.addon {
+				font-size: 1.3rem;
+			}
+		}
+		.contactText {
+			p {
+				width: 80%;
+				padding: 1em 2em 0.5em 2em;
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+@media (min-width: 1020px) {
+	.application {
+		.welcomeText {
+			.headText {
+				button {
+					font-size: 1.4rem;
+				}
+				h1 {
+					font-size: 3.5rem;
+				}
+			}
+			p {
+				width: 70%;
+				font-size: 1.6rem;
+			}
+			.addon {
+				font-size: 1.4rem;
+			}
+		}
+		.contactText {
+			p {
+				width: 70%;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+@media (min-width: 1020px) and (orientation: landscape) {
+	.application {
+		.welcomeText {
+			.headText {
+				flex-direction: row;
+				align-items: center;
+				button {
+					align-self: auto;
+					margin: 0 3em 0 0;
+					font-size: 1.4rem;
+				}
+				h1 {
+					font-size: 4rem;
+				}
+			}
+		}
+		.contactText {
+			p {
+				width: 60%;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+@media (min-width: 1800px) and (orientation: landscape) {
+	.application {
+		.welcomeText {
+			border-radius: 0 0 5em 5em;
+			.headText {
+				padding-top: 4em;
+				button {
+					font-size: 1.4rem;
+				}
+				h1 {
+					font-size: 5rem;
+				}
+			}
+			p {
+				width: 60%;
+			}
+		}
+		.contactText {
+			p {
+				width: 60%;
+			}
+		}
+	}
+}
+@media (min-width: 2500px) and (orientation: landscape) {
+	.application {
+		.welcomeText {
+			border-radius: 0 0 7em 7em;
+			.headText {
+				padding-top: 5em;
+				button {
+					font-size: 1.6rem;
+				}
+				h1 {
+					font-size: 5.5rem;
+				}
+			}
+			p {
+				width: 50%;
+				font-size: 1.8rem;
+			}
+			.addon {
+				font-size: 1.6rem;
+			}
+		}
+		.contactText {
+			p {
+				width: 50%;
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
