@@ -46,5 +46,5 @@ npm run build
 
 If you want to use finished project for example on your website.
 
-[!NOTE]
-This project is licensed under **BSD-3-Clause**
+>> [!NOTE]
+>> This project is licensed under **BSD-3-Clause**
